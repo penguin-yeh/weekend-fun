@@ -1,105 +1,127 @@
 <!doctype html><html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>私藏清幽景點 · 週末去哪玩</title><meta property="og:title" content="私藏清幽景點 · 週末去哪玩"><link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐧</text></svg>">
-<style>
-:root{--bg:#fff3e4;--card:#fff;--ink:#221e2c;--mute:#7a7484;--o:#ff7a1a;--p:#8b5cf6;--line:#f0e8de;--ok:#16805a;--okbg:#daf6e8}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif;line-height:1.6;-webkit-text-size-adjust:100%}
-a{color:inherit}
-.hero{background:linear-gradient(120deg,#ff7a1a 0%,#ff5f6d 45%,#8b5cf6 100%);color:#fff;padding:26px 18px 34px;border-radius:0 0 28px 28px;position:relative;overflow:hidden}
-.hero:after{content:"✦ ✧ ✦";position:absolute;right:16px;top:12px;opacity:.5;letter-spacing:.3em}
-.hero .wrap{padding:0 2px}
-.badge{display:inline-block;background:rgba(255,255,255,.22);border-radius:999px;padding:3px 12px;font-size:.82rem;font-weight:700;letter-spacing:.04em}
-.hero h1{margin:.35em 0 .15em;font-size:1.7rem;line-height:1.3}
-.hero p{margin:0;opacity:.92;font-size:.95rem}
-.stats{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-.stats span{background:#fff;color:var(--ink);border-radius:999px;padding:3px 12px;font-size:.82rem;font-weight:700}
-.wrap{max-width:820px;margin:0 auto;padding:0 14px}
-main.wrap{padding-bottom:50px}
-.nav{display:flex;gap:10px;margin:14px 0 0;flex-wrap:wrap}
-.nav a{font-size:.85rem;text-decoration:none;background:rgba(255,255,255,.2);border-radius:999px;padding:4px 12px;color:#fff}
-h2.sec{display:flex;align-items:center;gap:.5em;font-size:1.25rem;margin:28px 0 12px}
-h2.sec .dot{width:12px;height:12px;border-radius:50%;background:var(--o)}
-h2.sec small{color:var(--mute);font-weight:500;font-size:.85rem}
-.picks{background:#fff;border-radius:22px;padding:16px;margin-top:-18px;position:relative;box-shadow:0 8px 24px rgba(140,80,40,.12)}
-.picks h2{margin:0 0 10px;font-size:1.1rem}
-.prow{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:10px}
-.pick{display:flex;gap:10px;align-items:center;text-decoration:none;background:#fff0e2;border-radius:16px;padding:8px}
-.pick img{width:48px;height:48px;object-fit:cover;border-radius:12px;flex:none;background:#eee}
-.pick b{font-size:.88rem;line-height:1.35;display:block}
-.pick small{color:#d65a0a;font-weight:700;font-size:.75rem}
-.chips{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0 4px;position:sticky;top:0;background:var(--bg);padding:10px 0;z-index:5}
-.chip{border:2px solid #f3d9c2;background:#fff;border-radius:999px;padding:5px 14px;font-size:.88rem;font-weight:700;cursor:pointer;color:var(--ink);font-family:inherit}
-.chip.on{background:linear-gradient(120deg,#ff7a1a,#8b5cf6);border-color:transparent;color:#fff}
-.chip.sep{margin-left:4px}
-.grid{display:grid;grid-template-columns:1fr;gap:16px}
-@media(min-width:640px){.grid{grid-template-columns:1fr 1fr}}
-.card{background:var(--card);border-radius:22px;overflow:hidden;box-shadow:0 4px 16px rgba(140,80,40,.09);display:flex;flex-direction:column;border-top:5px solid var(--k,#999)}
-.card .ph{position:relative;aspect-ratio:16/9;background:#f4ece4}
-.card .ph img{width:100%;height:100%;object-fit:cover;display:block}
-.card .ph .credit{position:absolute;right:8px;bottom:6px;font-size:.62rem;color:#fff;background:rgba(0,0,0,.35);padding:1px 6px;border-radius:6px}
-.card .ph .star{position:absolute;left:10px;top:10px;background:#fff;color:#d65a0a;border-radius:999px;padding:2px 10px;font-size:.75rem;font-weight:800}
-.card .bd{padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;flex:1}
-.tag{display:inline-flex;align-items:center;gap:4px;background:var(--k,#999);color:#fff;border-radius:999px;padding:1px 10px;font-size:.75rem;font-weight:700;width:max-content}
-.card h3{margin:2px 0 0;font-size:1.08rem;line-height:1.4}
-.meta{font-size:.86rem;color:#4a4552}
-.meta div{display:flex;gap:6px}
-.meta i{font-style:normal;flex:none}
-.price{display:inline-block;border-radius:999px;padding:1px 10px;font-weight:700;font-size:.8rem;background:#ffe8d4;color:#b0480a}
-.price.free{background:var(--okbg);color:var(--ok)}
-.price.na{background:#eeecf0;color:#6e6e76}
-.hi{font-size:.9rem;background:#fff6ee;border-radius:12px;padding:8px 10px;margin:2px 0}
-.btn{margin-top:auto;align-self:flex-start;text-decoration:none;background:linear-gradient(120deg,#ff7a1a,#8b5cf6);color:#fff;font-weight:700;border-radius:999px;padding:7px 16px;font-size:.88rem}
-.notes{background:#f3edff;color:#5c3caa;border-radius:20px;padding:16px 18px;margin-top:30px}
-.notes h2{margin:0 0 6px;font-size:1.05rem}
-.notes ul{margin:0;padding-left:1.2em}
-.alert{background:#fff4d6;border:2px dashed #f2c14e;color:#7a5200;border-radius:20px;padding:14px 16px;margin-top:-18px;position:relative;font-size:.92rem}
-.warn{font-size:.85rem;color:#a3361b;background:#fff0eb;border-radius:12px;padding:6px 10px}
-.okn{font-size:.85rem;color:var(--ok);background:var(--okbg);border-radius:12px;padding:6px 10px}
-.empty{display:none;text-align:center;color:var(--mute);padding:20px}
-footer{text-align:center;color:var(--mute);font-size:.8rem;padding:20px 10px 40px}
-.big{display:block;text-decoration:none;background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 8px 24px rgba(140,80,40,.14);margin-top:-18px;position:relative}
-.big img{width:100%;aspect-ratio:16/8;object-fit:cover;display:block}
-.big .bd{padding:14px 18px 18px}
-.big .bd b{font-size:1.2rem;display:block;margin:6px 0 4px}
-.list a{display:flex;justify-content:space-between;align-items:center;text-decoration:none;background:#fff;border-radius:16px;padding:12px 16px;margin-bottom:10px;box-shadow:0 2px 10px rgba(140,80,40,.07)}
-.list a small{color:var(--mute)}
-.spotcard{display:flex;gap:12px;text-decoration:none;background:linear-gradient(120deg,#e7f8ee,#f3edff);border-radius:20px;padding:12px;align-items:center}
-.spotcard img{width:84px;height:84px;object-fit:cover;border-radius:14px;flex:none}
+<title>私藏清幽景點 · 週末去哪玩</title><meta property="og:title" content="私藏清幽景點 · 週末去哪玩"><meta name="theme-color" content="#1b1916">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐧</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300;1,9..144,500&family=Noto+Sans+TC:wght@400;500;700&family=Noto+Serif+TC:wght@500;700;900&display=swap" rel="stylesheet"><style>
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"Noto Sans TC",-apple-system,BlinkMacSystemFont,"PingFang TC","Microsoft JhengHei",sans-serif;line-height:1.7;overflow-x:hidden;font-feature-settings:"palt"}
+a{color:inherit}img{display:block;max-width:100%}
+.serif{font-family:"Noto Serif TC","Songti TC",serif}
+.num,.lat{font-family:Fraunces,"Noto Serif TC",serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 clamp(20px,5vw,56px)}
+.eyebrow{font-size:.72rem;letter-spacing:.22em;text-transform:uppercase;font-weight:500}
+/* cover */
+.cover{position:relative;min-height:92vh;min-height:92svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:#111}
+.cover>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:scale(1.04);animation:kb 14s ease-out forwards}
+@keyframes kb{to{transform:scale(1)}}
+.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.05) 30%,rgba(0,0,0,.25) 55%,rgba(0,0,0,.86) 100%)}
+.cover .top{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:space-between;align-items:center;padding:22px clamp(20px,5vw,56px)}
+.brand{font-family:"Noto Serif TC",serif;font-weight:900;font-size:1.05rem;letter-spacing:.08em;text-decoration:none}
+.toplinks{display:flex;gap:20px}.toplinks a{font-size:.8rem;text-decoration:none;letter-spacing:.12em;opacity:.9;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:2px}
+.cover .inner{position:relative;z-index:2;width:100%;padding-bottom:clamp(34px,7vh,72px)}
+.cover h1{font-family:"Noto Serif TC",serif;font-weight:900;font-size:clamp(2.6rem,9.5vw,7.2rem);line-height:1.06;letter-spacing:-.01em;margin:.2em 0 .25em;max-width:14ch;text-wrap:balance}
+.cover .dek{font-size:clamp(.98rem,1.6vw,1.15rem);max-width:36em;opacity:.9;margin:0}
+.cover .facts{display:flex;gap:28px;flex-wrap:wrap;margin-top:26px;padding-top:18px;border-top:1px solid rgba(255,255,255,.35)}
+.cover .facts b{display:block;font-family:Fraunces,serif;font-weight:300;font-size:2rem;line-height:1}
+.cover .facts span{font-size:.72rem;letter-spacing:.18em;opacity:.8}
+.cover .cap{position:absolute;right:clamp(20px,5vw,56px);bottom:14px;z-index:2;font-size:.68rem;opacity:.65;letter-spacing:.08em}
+/* split cover (for event posters that carry their own text) */
+.cover.split{display:grid;grid-template-columns:1fr;align-items:stretch;min-height:0;background:#16140f}
+.cover.split:after{display:none}
+.cover.split>img{position:relative;inset:auto;grid-row:1;height:64vh;height:64svh;min-height:340px}
+.cover.split .top{background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,0))}
+.cover.split .inner{grid-row:2;padding:34px clamp(20px,5vw,56px) 44px}
+.cover h1 .ph{display:inline-block}
+.cover.split h1{font-size:clamp(2.3rem,10.5vw,4rem);max-width:none}
+.cover.split .cap{position:static;margin-top:22px;opacity:.5}
+@media(min-width:900px){
+ .cover.split{grid-template-columns:6fr 5fr;min-height:92vh}
+ .cover.split>img{grid-column:2;grid-row:1;height:100%;min-height:0}
+ .cover.split .inner{grid-column:1;grid-row:1;align-self:end;padding:120px clamp(28px,4vw,64px) 64px clamp(20px,5vw,56px);max-width:none}
+ .cover.split h1{font-size:clamp(2.8rem,4.4vw,4.4rem);line-height:1.12}
+ .cover.split .top{background:none}
+}
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.2,.7,.2,1),transform .9s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.cover>img{animation:none;transform:none}html{scroll-behavior:auto}*{transition:none!important}}
+footer{border-top:1px solid var(--rule);margin-top:80px;padding:34px 0 56px;color:var(--mute);font-size:.8rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+:root{--paper:#eceee6;--ink:#222a24;--mute:#6f776d;--rule:#c9cdc0;--acc:#56704d;--stone:#a89f8d}
+body{font-family:"Noto Sans TC",sans-serif}
+.cover:after{background:linear-gradient(180deg,rgba(20,28,22,.5) 0%,rgba(20,28,22,0) 35%,rgba(20,28,22,.25) 60%,rgba(20,28,22,.88) 100%)}
+.cover h1{font-weight:700}
+.intro{padding:72px 0 10px;display:grid;grid-template-columns:1fr;gap:28px}
+@media(min-width:900px){.intro{grid-template-columns:5fr 7fr;gap:64px;padding:104px 0 20px}}
+.intro p.big .ph{display:inline-block}
+.grouphead h2 small{display:block;font-family:"Noto Sans TC",sans-serif;font-weight:400;font-size:.9rem;letter-spacing:.2em;color:var(--mute);margin-top:12px}
+.intro p.big{font-family:"Noto Serif TC",serif;font-size:clamp(1.3rem,2.4vw,1.75rem);line-height:1.7;margin:0;font-weight:500}
+.note{border-left:2px solid var(--stone);padding:4px 0 4px 20px;color:#4d5249;font-size:.93rem;line-height:1.9}
+.note .eyebrow{display:block;color:var(--acc);margin-bottom:6px;font-weight:700}
+.grouphead{padding:96px 0 18px;border-bottom:1px solid var(--ink);display:flex;justify-content:space-between;align-items:flex-end;gap:20px}
+.grouphead h2{font-family:"Noto Serif TC",serif;font-weight:700;font-size:clamp(2rem,6vw,4.2rem);line-height:1.1;margin:0}
+.grouphead .eyebrow{color:var(--mute);white-space:nowrap;padding-bottom:8px}
+.spot{display:grid;grid-template-columns:1fr;gap:24px;padding:48px 0;border-bottom:1px solid var(--rule)}
+.spot .media{margin:0 calc(-1*clamp(20px,5vw,56px));overflow:hidden;background:#d9dccf}
+.spot .media img{width:100%;aspect-ratio:3/2;object-fit:cover;filter:saturate(.88);transition:transform 1.4s cubic-bezier(.2,.7,.2,1),filter .8s}
+.spot:hover .media img{transform:scale(1.03);filter:saturate(1)}
+.spot figcaption{font-size:.62rem;color:var(--mute);padding:6px clamp(20px,5vw,56px) 0;letter-spacing:.08em}
+@media(min-width:900px){
+ .spot{grid-template-columns:7fr 5fr;gap:60px;align-items:center;padding:72px 0}
+ .spot .media{margin:0}.spot figcaption{padding-left:0}
+ .spot:nth-child(even of .spot){grid-template-columns:5fr 7fr}
+ .spot:nth-child(even of .spot) .media{order:2}
+}
+.spot .num{font-family:Fraunces,serif;font-style:italic;font-weight:300;font-size:1.05rem;color:var(--acc);letter-spacing:.1em}
+.spot h3{font-family:"Noto Serif TC",serif;font-weight:700;font-size:clamp(1.7rem,3.2vw,2.5rem);line-height:1.2;margin:6px 0 4px}
+.spot .area{font-size:.78rem;letter-spacing:.2em;color:var(--mute);margin-bottom:20px}
+.spot .why{font-family:"Noto Serif TC",serif;font-size:1.12rem;line-height:1.9;margin:0 0 22px}
+.spot dl{display:grid;grid-template-columns:auto 1fr;gap:8px 18px;margin:0 0 22px;font-size:.88rem;border-top:1px solid var(--rule);padding-top:16px}
+.spot dt{font-size:.68rem;letter-spacing:.2em;color:var(--mute);padding-top:3px}
+.spot dd{margin:0}
+.spot dd.warn{color:#8a4b2a}.spot dd.ok{color:var(--acc)}
+.more{display:inline-flex;gap:10px;align-items:center;text-decoration:none;font-size:.82rem;letter-spacing:.18em;font-weight:700;border-bottom:1px solid var(--ink);padding-bottom:4px}
+.more i{font-style:normal;font-family:Fraunces,serif;transition:transform .3s}.more:hover i{transform:translateX(5px)}.more:hover{color:var(--acc);border-color:var(--acc)}
 </style></head><body>
-<header class="hero" style="background:linear-gradient(120deg,#22a05a 0%,#14b8a6 45%,#8b5cf6 100%)"><div class="wrap"><span class="badge">🐧 週末去哪玩 · 私藏</span>
-<h1>🌿 私藏清幽景點</h1><p>遠離城市、回歸大自然、沒什麼人的隱藏景點</p><nav class="nav"><a href="index.html">🏠 首頁</a></nav></div></header>
-<main class="wrap"><div class="alert">🌀 <b>颱風後路況</b>：上週颱風過後，五峰和尖石山區的路還在修：縣道 122 線部分路段只能單向通車，竹 60 線坍方雙向不通，所以尖石深山的點這次先不放。騎車時間都是估計的，出發前再確認路況。</div><section><h2 class="sec"><span class="dot" style="background:#22a05a"></span>新竹附近（騎車 2 小時內） <small>11 個</small></h2><div class="grid"><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-xinfeng-mangrove.jpg" alt="新豐紅樹林（新竹縣新豐鄉）" loading="lazy" decoding="async"><span class="credit">Wikimedia Commons</span></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>新豐紅樹林</h3><div class="meta"><div><i>📍</i><span>新竹縣新豐鄉</span></div><div><i>🛵</i><span>騎車 約 30 分鐘（估計）</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 紅樹林裡有木棧道，傍晚可以看夕陽。</div><div class="warn">⚠️ 颱風後步道還沒確認有沒有開放。</div><a class="btn" href="https://travel.hsinchu.gov.tw/attraction/content/R7O8l78wvyba" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-qilong-trail.jpg" alt="騎龍古道（新竹縣橫山鄉）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>騎龍古道</h3><div class="meta"><div><i>📍</i><span>新竹縣橫山鄉</span></div><div><i>🛵</i><span>騎車 約 40 分鐘（估計）</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 有三座糯米古橋和孟宗竹林，沿著溪谷走很安靜。</div><div class="warn">⚠️ 石階很滑，要穿止滑鞋。</div><a class="btn" href="https://hiking.biji.co/index.php?act=detail&amp;id=1854&amp;q=trail" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-wuzhishan.jpg" alt="五指山登山步道（新竹縣北埔鄉）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>五指山登山步道</h3><div class="meta"><div><i>📍</i><span>新竹縣北埔鄉</span></div><div><i>🛵</i><span>騎車 約 50 分鐘（估計）</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 走 2.3 公里的柳杉林，山頂可以一路看到新竹市區。</div><div class="okn">✅ 已確認開放。</div><a class="btn" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=044" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-meihouman-falls.jpg" alt="梅后蔓瀑布步道（新竹縣五峰鄉）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>梅后蔓瀑布步道</h3><div class="meta"><div><i>📍</i><span>新竹縣五峰鄉</span></div><div><i>🛵</i><span>騎車 約 1 小時 15 分（估計）</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 原始林步道走到底是 30 公尺高的瀑布，來回約 70 分鐘。</div><div class="warn">⚠️ 要走 122 線（部分路段單向通車），下雨天別去。</div><a class="btn" href="https://vocus.cc/article/69d9911ffd89780001cf3414" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-xiangtian-lake.jpg" alt="向天湖（苗栗縣南庄鄉）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>向天湖</h3><div class="meta"><div><i>📍</i><span>苗栗縣南庄鄉</span></div><div><i>🛵</i><span>騎車 約 1 小時 20 分（估計）</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 被群山圍著的高山湖，清晨常起霧。</div><div class="warn">⚠️ 11/20–22 有矮靈祭，人會很多，記得避開。</div><a class="btn" href="https://www.trimt-nsa.gov.tw/zh-tw/attraction/1/" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-sanliantan.jpg" alt="三連潭古圳道（苗栗縣大湖鄉）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>三連潭古圳道</h3><div class="meta"><div><i>📍</i><span>苗栗縣大湖鄉</span></div><div><i>🛵</i><span>騎車 約 1 小時 20 分（估計）</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 可以走進以前引水用的長山洞，假日也很少人。</div><div class="warn">⚠️ 要帶手電筒。</div><a class="btn" href="https://taiwanhuma.com/sanlientan/" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-shenxiangu.jpg" alt="神仙谷（苗栗縣南庄鄉）" loading="lazy" decoding="async"><span class="credit">Wikimedia Commons</span></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>神仙谷</h3><div class="meta"><div><i>📍</i><span>苗栗縣南庄鄉</span></div><div><i>🛵</i><span>騎車 約 1 小時 40 分（估計）</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 三條溪匯流的峽谷，有瀑布和吊橋，雨後雲霧最美。</div><div class="warn">⚠️ 水流很急，不要下溪。</div><a class="btn" href="https://www.trimt-nsa.gov.tw/zh-tw/attraction/26/" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-niaozui.jpg" alt="鳥嘴山步道（苗栗縣泰安鄉）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>鳥嘴山步道</h3><div class="meta"><div><i>📍</i><span>苗栗縣泰安鄉</span></div><div><i>🛵</i><span>騎車 約 1 小時 30 分（估計）</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 很少人走，山頂可以看加里山。</div><div class="warn">⚠️ 很陡，適合有爬山經驗的人，要留一整天；已確認開放。</div><a class="btn" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=042" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-dongyanshan.jpg" alt="東眼山森林遊樂區（桃園市復興區）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>東眼山森林遊樂區</h3><div class="meta"><div><i>📍</i><span>桃園市復興區</span></div><div><i>🛵</i><span>騎車 約 1 小時 40 分（估計）</span></div><div><i>🎟️</i><span><span class="price ">假日門票 100 元，機車停車 20 元</span></span></div></div>
-<div class="hi">🤫 柳杉林很清幽。</div><div class="warn">⚠️ 10/25 已恢復開放，部分步道施工到 11/21。</div><a class="btn" href="https://recreation.forest.gov.tw/forest/RA?typ_id=0200003" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-caota-dunes.jpg" alt="草漯沙丘（桃園市觀音區）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>草漯沙丘</h3><div class="meta"><div><i>📍</i><span>桃園市觀音區</span></div><div><i>🛵</i><span>騎車 約 1 小時（估計）</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 8 公里的海岸沙丘，有風吹出來的沙紋，像小沙漠。</div><div class="warn">⚠️ 沒有遮蔭，要防曬。</div><a class="btn" href="https://travel.tycg.gov.tw/zh-tw/travel/attraction/1442" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-beichatian.jpg" alt="北插天山（桃園市復興區）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>北插天山</h3><div class="meta"><div><i>📍</i><span>桃園市復興區</span></div><div><i>🛵</i><span>騎車 2 小時多（估計）</span></div><div><i>🎟️</i><span><span class="price free">免費，但要先線上申請進入保留區</span></span></div></div>
-<div class="hi">🤫 現在正是山毛櫸轉黃的時候。</div><div class="warn">⚠️ 要走一整天，體力要求高。</div><a class="btn" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=025" target="_blank" rel="noopener">景點資訊 ↗</a></div></article></div></section><section><h2 class="sec"><span class="dot" style="background:#22a05a"></span>其他地方（比較適合搭車去） <small>5 個</small></h2><div class="grid"><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-xinshan-menghu.jpg" alt="新山夢湖（新北市汐止區）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>新山夢湖</h3><div class="meta"><div><i>📍</i><span>新北市汐止區</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 山中小湖，環湖步道很好走。</div><a class="btn" href="https://newtaipei.travel/zh-tw/attractions/detail/110799" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-hengling-muma.jpg" alt="橫嶺山木馬古道（台中市和平區）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>橫嶺山木馬古道</h3><div class="meta"><div><i>📍</i><span>台中市和平區</span></div></div>
-<div class="hi">🤫 以前運木材的古道，路上鋪滿松針，還看得到廢棄的木馬和炭窯。</div><a class="btn" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=048" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-tefuye.jpg" alt="特富野古道（嘉義縣阿里山鄉）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>特富野古道</h3><div class="meta"><div><i>📍</i><span>嘉義縣阿里山鄉</span></div></div>
-<div class="hi">🤫 鄒族的獵徑接到舊鐵道，柳杉林很美。</div><div class="okn">✅ 颱風後已恢復開放。</div><a class="btn" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=081" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-niupu-mudstone.jpg" alt="牛埔泥岩園區（台南市龍崎區）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>牛埔泥岩園區</h3><div class="meta"><div><i>📍</i><span>台南市龍崎區</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 像月世界的泥岩地形，中間有一座湖，人比田寮月世界少很多。</div><a class="btn" href="https://www.siraya-nsa.gov.tw/zh-tw/attractions/detail/154" target="_blank" rel="noopener">景點資訊 ↗</a></div></article><article class="card" style="--k:#22a05a"><div class="ph"><img src="img/spot-shuangxi-arboretum.jpg" alt="美濃雙溪樹木園（高雄市美濃區）" loading="lazy" decoding="async"></div>
-<div class="bd"><span class="tag">🌿 清幽</span><h3>美濃雙溪樹木園</h3><div class="meta"><div><i>📍</i><span>高雄市美濃區</span></div><div><i>🎟️</i><span><span class="price free">免費</span></span></div></div>
-<div class="hi">🤫 1935 年種下的熱帶樹木園，就在黃蝶翠谷旁邊。</div><a class="btn" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=125" target="_blank" rel="noopener">景點資訊 ↗</a></div></article></div></section></main>
-<footer>週末去哪玩 🐧 為 Penguin 整理 · 資訊以各活動官方頁面為準，出發前再確認一下</footer>
-</body></html>
+<header class="cover"><img src="img/spot-xiangtian-lake.jpg" alt="向天湖" fetchpriority="high" decoding="async">
+<div class="top"><a class="brand" href="index.html">週末去哪玩</a><nav class="toplinks"><a href="index.html">首頁</a></nav></div>
+<div class="inner wrap"><div class="eyebrow">Quiet Places · 私藏</div><h1>私藏清幽景點</h1><p class="dek">遠離城市、回歸大自然、沒什麼人的隱藏景點。</p></div>
+<div class="cap">封面　向天湖・苗栗縣南庄鄉</div></header><main><div class="wrap"><section class="intro rv"><p class="big">不排隊、不人擠人。<br><span class="ph">挑一個晴朗的早上，</span><span class="ph">往山裡、海邊去走走。</span></p>
+<div class="note"><span class="eyebrow">颱風後路況</span>上週颱風過後，五峰和尖石山區的路還在修：縣道 122 線部分路段只能單向通車，竹 60 線坍方雙向不通，所以尖石深山的點這次先不放。騎車時間都是估計的，出發前再確認路況。</div></section><section><div class="grouphead rv"><h2>新竹附近<small>騎車 2 小時內</small></h2><span class="eyebrow">11 places</span></div><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-xinfeng-mangrove.jpg" alt="新豐紅樹林（新竹縣新豐鄉）" loading="lazy" decoding="async"><figcaption>Photo · Wikimedia Commons</figcaption></figure>
+<div><div class="num">No. 01</div><h3>新豐紅樹林</h3><div class="area">新竹縣新豐鄉</div><p class="why">紅樹林裡有木棧道，傍晚可以看夕陽。</p>
+<dl><dt>RIDE</dt><dd>騎車 約 30 分鐘（估計）</dd><dt>COST</dt><dd>免費</dd><dt>NOTE</dt><dd class="warn">颱風後步道還沒確認有沒有開放。</dd></dl><a class="more" href="https://travel.hsinchu.gov.tw/attraction/content/R7O8l78wvyba" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-qilong-trail.jpg" alt="騎龍古道（新竹縣橫山鄉）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 02</div><h3>騎龍古道</h3><div class="area">新竹縣橫山鄉</div><p class="why">有三座糯米古橋和孟宗竹林，沿著溪谷走很安靜。</p>
+<dl><dt>RIDE</dt><dd>騎車 約 40 分鐘（估計）</dd><dt>COST</dt><dd>免費</dd><dt>NOTE</dt><dd class="warn">石階很滑，要穿止滑鞋。</dd></dl><a class="more" href="https://hiking.biji.co/index.php?act=detail&amp;id=1854&amp;q=trail" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-wuzhishan.jpg" alt="五指山登山步道（新竹縣北埔鄉）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 03</div><h3>五指山登山步道</h3><div class="area">新竹縣北埔鄉</div><p class="why">走 2.3 公里的柳杉林，山頂可以一路看到新竹市區。</p>
+<dl><dt>RIDE</dt><dd>騎車 約 50 分鐘（估計）</dd><dt>COST</dt><dd>免費</dd><dt>STATUS</dt><dd class="ok">已確認開放。</dd></dl><a class="more" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=044" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-meihouman-falls.jpg" alt="梅后蔓瀑布步道（新竹縣五峰鄉）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 04</div><h3>梅后蔓瀑布步道</h3><div class="area">新竹縣五峰鄉</div><p class="why">原始林步道走到底是 30 公尺高的瀑布，來回約 70 分鐘。</p>
+<dl><dt>RIDE</dt><dd>騎車 約 1 小時 15 分（估計）</dd><dt>COST</dt><dd>免費</dd><dt>NOTE</dt><dd class="warn">要走 122 線（部分路段單向通車），下雨天別去。</dd></dl><a class="more" href="https://vocus.cc/article/69d9911ffd89780001cf3414" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-xiangtian-lake.jpg" alt="向天湖（苗栗縣南庄鄉）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 05</div><h3>向天湖</h3><div class="area">苗栗縣南庄鄉</div><p class="why">被群山圍著的高山湖，清晨常起霧。</p>
+<dl><dt>RIDE</dt><dd>騎車 約 1 小時 20 分（估計）</dd><dt>COST</dt><dd>免費</dd><dt>NOTE</dt><dd class="warn">11/20–22 有矮靈祭，人會很多，記得避開。</dd></dl><a class="more" href="https://www.trimt-nsa.gov.tw/zh-tw/attraction/1/" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-sanliantan.jpg" alt="三連潭古圳道（苗栗縣大湖鄉）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 06</div><h3>三連潭古圳道</h3><div class="area">苗栗縣大湖鄉</div><p class="why">可以走進以前引水用的長山洞，假日也很少人。</p>
+<dl><dt>RIDE</dt><dd>騎車 約 1 小時 20 分（估計）</dd><dt>COST</dt><dd>免費</dd><dt>NOTE</dt><dd class="warn">要帶手電筒。</dd></dl><a class="more" href="https://taiwanhuma.com/sanlientan/" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-shenxiangu.jpg" alt="神仙谷（苗栗縣南庄鄉）" loading="lazy" decoding="async"><figcaption>Photo · Wikimedia Commons</figcaption></figure>
+<div><div class="num">No. 07</div><h3>神仙谷</h3><div class="area">苗栗縣南庄鄉</div><p class="why">三條溪匯流的峽谷，有瀑布和吊橋，雨後雲霧最美。</p>
+<dl><dt>RIDE</dt><dd>騎車 約 1 小時 40 分（估計）</dd><dt>COST</dt><dd>免費</dd><dt>NOTE</dt><dd class="warn">水流很急，不要下溪。</dd></dl><a class="more" href="https://www.trimt-nsa.gov.tw/zh-tw/attraction/26/" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-niaozui.jpg" alt="鳥嘴山步道（苗栗縣泰安鄉）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 08</div><h3>鳥嘴山步道</h3><div class="area">苗栗縣泰安鄉</div><p class="why">很少人走，山頂可以看加里山。</p>
+<dl><dt>RIDE</dt><dd>騎車 約 1 小時 30 分（估計）</dd><dt>COST</dt><dd>免費</dd><dt>NOTE</dt><dd class="warn">很陡，適合有爬山經驗的人，要留一整天；已確認開放。</dd></dl><a class="more" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=042" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-dongyanshan.jpg" alt="東眼山森林遊樂區（桃園市復興區）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 09</div><h3>東眼山森林遊樂區</h3><div class="area">桃園市復興區</div><p class="why">柳杉林很清幽。</p>
+<dl><dt>RIDE</dt><dd>騎車 約 1 小時 40 分（估計）</dd><dt>COST</dt><dd>假日門票 100 元，機車停車 20 元</dd><dt>NOTE</dt><dd class="warn">10/25 已恢復開放，部分步道施工到 11/21。</dd></dl><a class="more" href="https://recreation.forest.gov.tw/forest/RA?typ_id=0200003" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-caota-dunes.jpg" alt="草漯沙丘（桃園市觀音區）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 10</div><h3>草漯沙丘</h3><div class="area">桃園市觀音區</div><p class="why">8 公里的海岸沙丘，有風吹出來的沙紋，像小沙漠。</p>
+<dl><dt>RIDE</dt><dd>騎車 約 1 小時（估計）</dd><dt>COST</dt><dd>免費</dd><dt>NOTE</dt><dd class="warn">沒有遮蔭，要防曬。</dd></dl><a class="more" href="https://travel.tycg.gov.tw/zh-tw/travel/attraction/1442" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-beichatian.jpg" alt="北插天山（桃園市復興區）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 11</div><h3>北插天山</h3><div class="area">桃園市復興區</div><p class="why">現在正是山毛櫸轉黃的時候。</p>
+<dl><dt>RIDE</dt><dd>騎車 2 小時多（估計）</dd><dt>COST</dt><dd>免費，但要先線上申請進入保留區</dd><dt>NOTE</dt><dd class="warn">要走一整天，體力要求高。</dd></dl><a class="more" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=025" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article></section><section><div class="grouphead rv"><h2>其他地方<small>比較適合搭車去</small></h2><span class="eyebrow">5 places</span></div><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-xinshan-menghu.jpg" alt="新山夢湖（新北市汐止區）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 12</div><h3>新山夢湖</h3><div class="area">新北市汐止區</div><p class="why">山中小湖，環湖步道很好走。</p>
+<dl><dt>COST</dt><dd>免費</dd></dl><a class="more" href="https://newtaipei.travel/zh-tw/attractions/detail/110799" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-hengling-muma.jpg" alt="橫嶺山木馬古道（台中市和平區）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 13</div><h3>橫嶺山木馬古道</h3><div class="area">台中市和平區</div><p class="why">以前運木材的古道，路上鋪滿松針，還看得到廢棄的木馬和炭窯。</p>
+<a class="more" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=048" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-tefuye.jpg" alt="特富野古道（嘉義縣阿里山鄉）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 14</div><h3>特富野古道</h3><div class="area">嘉義縣阿里山鄉</div><p class="why">鄒族的獵徑接到舊鐵道，柳杉林很美。</p>
+<dl><dt>STATUS</dt><dd class="ok">颱風後已恢復開放。</dd></dl><a class="more" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=081" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-niupu-mudstone.jpg" alt="牛埔泥岩園區（台南市龍崎區）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 15</div><h3>牛埔泥岩園區</h3><div class="area">台南市龍崎區</div><p class="why">像月世界的泥岩地形，中間有一座湖，人比田寮月世界少很多。</p>
+<dl><dt>COST</dt><dd>免費</dd></dl><a class="more" href="https://www.siraya-nsa.gov.tw/zh-tw/attractions/detail/154" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article><article class="spot rv"><figure class="media" style="margin-top:0;margin-bottom:0"><img src="img/spot-shuangxi-arboretum.jpg" alt="美濃雙溪樹木園（高雄市美濃區）" loading="lazy" decoding="async"></figure>
+<div><div class="num">No. 16</div><h3>美濃雙溪樹木園</h3><div class="area">高雄市美濃區</div><p class="why">1935 年種下的熱帶樹木園，就在黃蝶翠谷旁邊。</p>
+<dl><dt>COST</dt><dd>免費</dd></dl><a class="more" href="https://recreation.forest.gov.tw/Trail/RT?tr_id=125" target="_blank" rel="noopener">景點資訊 <i>→</i></a></div></article></section></div></main>
+<footer><div class="wrap"><span class="serif" style="font-weight:900;color:var(--ink)">週末去哪玩</span><span>為 Penguin 整理 · 資訊以各活動官方頁面為準，出發前再確認一下</span></div></footer>
+<script>(function(){var els=document.querySelectorAll('.rv');
+if(!('IntersectionObserver' in window)||matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(function(e){e.classList.add('in')});return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+els.forEach(function(e){io.observe(e)});})();</script></body></html>
