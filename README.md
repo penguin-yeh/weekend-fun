@@ -55,3 +55,11 @@ IG／Threads 帳號只拿來找線索，一定要到官方或活動頁確認日�
 - 官方場館頁：華山 huashan1914.com、松菸 songshanculturalpark.org、北美館 tfam.museum、MOCA mocataipei.org.tw、故宮 npm.gov.tw、忠泰美術館、國美館 ntmofa.gov.tw、高美館 kmfa.gov.tw、衛武營 npac-weiwuying.org。
 - 展覽活動：南港展覽館 tainex.com.tw、世貿 twtc.com.tw、臺北市政府文化局 culture.gov.taipei、台灣觀光 taiwan.net.tw。
 - 演唱會：concert.nericlab.com/month/YYYY-MM（各場開賣日曆）、arena.taipei、KKTIX、ibon、拓元 tixcraft、Ticket Plus。
+
+## 資料欄位補充（免費標記）
+
+- `free: true`：卡片標題列顯示綠框「免費」標籤，「免費」篩選鈕只顯示這些項目。
+- `reg_required: true`：免費但要先線上取票或預約，標籤改成「免費・需先取票」。
+- `reg_url` / `reg_label`：取票或預約連結（預設文字「免費取票」）。`reg_note` 寫名額、截止日等條件，例如「限量 1,000 張，送完為止」。
+- `free_note`：本身要收費、但有免費時段的項目（例如北美館 17:00 後免費），顯示虛線標籤，不會被算進免費篩選。
+- `source`：線索來源（例如 `@taipei_gan_ma`）。只有核對過官方頁面才會加上這個項目。
