@@ -1,0 +1,34 @@
+name: Sync claude branches into main
+
+# weekend-fun 的 GitHub Pages 是 legacy 模式，直接從 main 根目錄部署，push 到 main 會自動重新發布。
+# 這個 workflow 只負責：如果產生當週頁面的 session 被限制在 claude/* 分支上開發，
+# 自動把該分支最新一週的頁面、資料與圖片同步進 main，讓內容真正落地、觸發 Pages 重新部署。
+on:
+  push:
+    branches: ['claude/**']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: weekend-fun-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - name: Fetch source branch
+        run: git fetch origin "+refs/heads/${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}"
+      - name: Sync latest week into main
+        run: scripts/sync_latest.sh "${GITHUB_REF_NAME}"
+      - name: Push main
+        run: |
+          if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then
+            git push origin HEAD:main
+          fi
