@@ -5,7 +5,8 @@ name: Sync claude branches into main
 # 自動把該分支最新一週的頁面、資料與圖片同步進 main，讓內容真正落地、觸發 Pages 重新部署。
 on:
   push:
-    branches: ['claude/**']
+    branches: [main, 'claude/**']
+    paths: ['2*.html', 'index.html', 'scripts/add_week_nav.py', '.github/workflows/sync-main.yml']
   workflow_dispatch:
 
 permissions:
@@ -24,9 +25,19 @@ jobs:
           ref: main
           fetch-depth: 0
       - name: Fetch source branch
+        if: github.ref_name != 'main'
         run: git fetch origin "+refs/heads/${GITHUB_REF_NAME}:refs/remotes/origin/${GITHUB_REF_NAME}"
       - name: Sync latest week into main
+        if: github.ref_name != 'main'
         run: scripts/sync_latest.sh "${GITHUB_REF_NAME}"
+      - name: Refresh week navigation
+        run: |
+          python3 scripts/add_week_nav.py
+          git add -A
+          if ! git diff --cached --quiet; then
+            git -c user.name="github-actions[bot]" -c user.email="41898282+github-actions[bot]@users.noreply.github.com" \
+              commit -q -m "Refresh week navigation"
+          fi
       - name: Push main
         run: |
           if [ "$(git rev-parse HEAD)" != "$(git rev-parse origin/main)" ]; then

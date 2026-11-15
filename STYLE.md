@@ -48,3 +48,7 @@ git add -A && git commit -m "weekend YYYY-MM-DD" && git push origin main
 ```
 
 資料欄位、`concerts.html`／`hidden-spots.html` 的欄位細節，見 `README.md`。
+
+## 週數切換（必備）
+
+每個 `YYYY-MM-DD.html`（週六日期）與 `index.html` 的封面 `</header>` 之後必須有「← 上一週／週數選單／下一週 →」。**不要手寫、不要改 `build_site.py` 去輸出它**：頁面產生後執行 `python3 scripts/add_week_nav.py`，它用 `<!--weeknav-->…<!--/weeknav-->` 標記插入或更新（行內樣式、顏色取 `--paper／--ink／--rule／--mute` 變數）。不准手改標記內的內容。
