@@ -10,6 +10,14 @@
 2. 圖片只能是 `fetch_images.py` 抓到的真實活動照（或 PIL 畫的灰階佔位圖，由 `image_placeholder` 標記），不可以手動塞一張不相關的圖片。
 3. 展覽/活動卡片的 `sun`／`sat` 欄位要對應真實開放日期，不可以憑空假設。
 4. 全部文字用繁體中文；連結、日期、地點要跟活動官方頁一致，不可編造。
+5. 每個會被送到 GitHub Pages 的 HTML（含 `index.html`、週六日期頁、`concerts.html`、`hidden-spots.html`）的 `<head>` 在 `</title>` 之後必須有本站 favicon 這四行，並且**不要再輸出**原來那行企鵝 data-uri icon。`build_site.py` 產生頁面時也要這樣寫，否則下次重跑會把 icon 蓋掉：
+
+```html
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" type="image/png" sizes="32x32">
+<link rel="apple-touch-icon" href="apple-touch-icon.png" sizes="180x180">
+<link rel="manifest" href="site.webmanifest">
+```
 
 ## 1. 設計 token（色票與字型，取自 `index.html` 實際 CSS）
 
